@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: millimiter-regular;
+    src: url(../fonts/Millimetre-Regular_web.woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: millimiter-light;
+    src: url(../fonts/Millimetre-Light_web.woff2);
+    font-weight: 100;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+body {
+    color: black;
+}
+
+
+/*FONTS*/
+
+.light {
+    font-family: 'millimiter-light';
+}
+.reg {
+    font-family: 'millimiter-regular';
+}
+
+/*NAV*/
+
+nav ul {
+    background-color: black;
+    width: 15%;
+}
+.navbar button {
+    background-color: black;
+    border-radius: 0;
+    width: 15%;
+    outline: none;
+}
+nav button span {
+    font-size: 1rem;
+    color: white;
+
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+nav ul li a{
+    background-color: black;
+    font-family: millimiter-regular;
+}
+/*HEADER*/
+
+.titulo h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+    margin-bottom: -1rem;
+}
+
+
+
+/*SOBRE MI*/
+
+.sobremi {
+	color: black;
+
+}
+
+
+
+/*TARJETA REDES*/
+.tarjeta-redes {
+    background-color: black;
+    margin-top: 3rem;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    padding: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-content: center;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: white;
+
+
+}
+
+ul li a p {
+    padding: 0 0.5rem;
+    margin-bottom: 0;
+}
+
+
+/*TARJETAS PROYECTOS*/
+
+div .tarjeta a{
+    color: black;
+    text-decoration: none;
+
+}
+
+div .tarjeta a:hover{
+    text-decoration: underline;
+}
+
+
+.tarjetas-proyectos{
+    background-color: black;
+
+}
+
+.tarjeta {
+    margin: 1.5rem 0.75rem;
+    background-color: white;
+    color: black;
+}
+
+.tarjeta img {
+    height: 100%;
+    width: auto;
+}
+
+.tarjeta-texto {
+    padding: 0.5rem;
+}
+
+.tarjeta-texto p{
+    padding-top: 0.5rem;
+}
+
+/*FORMULARIO*/
+#contacto {
+    margin: 2rem 0rem;
+}
+
+label, .form button {display:block}
+
+label{
+    padding-top: 1rem;
+}
+
+input, textarea{
+    width: 40vw;
+    padding: 0.2rem;
+    border: 2px solid black;
+    outline: none;
+    font-family: millimiter-light;
+}
+
+textarea{
+    resize: none;
+}
+
+#contacto button {
+    font-family: millimiter-regular;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+    border: 0;
+}
+
+
+footer {
+    background-color: black;
+}
+
+
+@media (max-width: 768px) {
+    
+    body {font-size: 80%;}
+    .titulo h1{font-size: 4rem;
+    color: white;}
+    h3{color:white}
+    nav ul {
+        width: 100%;
+    }
+    .navbar button {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .header-img {
+        background-color: black;
+    }
+    .texto-sobremi {
+        margin-top: 3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    
+    .tarjeta {
+    margin: 0.75rem 0rem;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: auto;
+    }
+
+    label{font-size: 1.5rem;}
+    input{width: 100%;}
+    textarea{width: 100%;}
+    
+}
